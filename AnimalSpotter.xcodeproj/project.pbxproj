@@ -41,6 +41,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		638B469B23980F1400F9267F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCA57A22668AB2009EA535 /* AppDelegate.swift */,
+				CEDCA58122668AB2009EA535 /* Assets.xcassets */,
+				CEDCA58622668AB2009EA535 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		638B469C23980F5100F9267F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCA57E22668AB2009EA535 /* Main.storyboard */,
+				CEDCA58322668AB2009EA535 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		638B469D23980FE500F9267F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEDCA5982266967E009EA535 /* View Controllers */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		638B469E23980FF000F9267F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				638B469C23980F5100F9267F /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		638B469F23980FFC00F9267F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CEDCA56E22668AB2009EA535 = {
 			isa = PBXGroup;
 			children = (
@@ -60,31 +102,21 @@
 		CEDCA57922668AB2009EA535 /* AnimalSpotter */ = {
 			isa = PBXGroup;
 			children = (
-				CEDCA59722669673009EA535 /* Application */,
-				CEDCA5982266967E009EA535 /* View Controllers */,
-				CEDCA5962266966C009EA535 /* Models */,
-				CEDCA57E22668AB2009EA535 /* Main.storyboard */,
-				CEDCA58122668AB2009EA535 /* Assets.xcassets */,
-				CEDCA58322668AB2009EA535 /* LaunchScreen.storyboard */,
-				CEDCA58622668AB2009EA535 /* Info.plist */,
+				638B469F23980FFC00F9267F /* Model */,
+				638B469E23980FF000F9267F /* View */,
+				638B469D23980FE500F9267F /* Controller */,
+				CEDCA59722669673009EA535 /* Networking */,
+				638B469B23980F1400F9267F /* Supporting Files */,
 			);
 			path = AnimalSpotter;
 			sourceTree = "<group>";
 		};
-		CEDCA5962266966C009EA535 /* Models */ = {
+		CEDCA59722669673009EA535 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		CEDCA59722669673009EA535 /* Application */ = {
-			isa = PBXGroup;
-			children = (
-				CEDCA57A22668AB2009EA535 /* AppDelegate.swift */,
 				CEDCA599226697BD009EA535 /* APIController.swift */,
 			);
-			path = Application;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		CEDCA5982266967E009EA535 /* View Controllers */ = {
@@ -319,12 +351,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AnimalSpotter/Info.plist;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "AnimalSpotter/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.AnimalSpotter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaSchool.AnimalSpotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,12 +369,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AnimalSpotter/Info.plist;
+				DEVELOPMENT_TEAM = VXUQXR6S56;
+				INFOPLIST_FILE = "AnimalSpotter/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.AnimalSpotter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaSchool.AnimalSpotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
